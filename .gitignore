@@ -1,14 +1,58 @@
+# Build and package files
 /minifier/
 /phar/
+ArPHP.phar
+
+# Dependencies
 /vendor/
+composer.lock
+
+# Testing and coverage
 /coverage/
 /phpunit.phar
 /.phpunit.result.cache
 /phpstan.phar
 /phpstan.neon
+
+# IDE
 .idea/ar-php.iml
 .idea/misc.xml
 .idea/modules.xml
 .idea/vcs.xml
 .idea/workspace.xml
-ArPHP.phar
+
+# Large data files that should not be tracked
+# Database files
+src/data/*.db
+src/data/*.db.gz
+src/data/SarahSpell/
+
+# Documentation models and datasets (too large for version control)
+docs/models/*.tsv
+docs/models/*.tsv.gz
+docs/models/*.csv
+docs/models/*.csv.gz
+docs/models/
+
+# Font files (should be obtained from CDN or separate release)
+examples/fonts/*.ttf
+examples/fonts/*.otf
+examples/fonts/
+
+# Large image files
+docs/images/*.gif
+docs/images/*.psd
+examples/images/*.gif
+docs/pwa/images/
+
+# Generated documentation
+docs/pwa/pwa.zip
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.log
