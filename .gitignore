@@ -15,33 +15,18 @@ composer.lock
 /phpstan.neon
 
 # IDE
-.idea/ar-php.iml
-.idea/misc.xml
-.idea/modules.xml
-.idea/vcs.xml
-.idea/workspace.xml
+.idea/
 
-# Large data files that should not be tracked
-# Database files
-src/data/*.db
-src/data/*.db.gz
-src/data/SarahSpell/
-
-# Documentation models and datasets (too large for version control)
-docs/models/*.tsv
+# Large documentation models (optional - for development only)
 docs/models/*.tsv.gz
-docs/models/*.csv
 docs/models/*.csv.gz
-docs/models/
 
-# Font files (should be obtained from CDN or separate release)
+# Font files (use from CDN or releases)
 examples/fonts/*.ttf
 examples/fonts/*.otf
-examples/fonts/
 
 # Large image files
 docs/images/*.gif
-docs/images/*.psd
 examples/images/*.gif
 docs/pwa/images/
 
